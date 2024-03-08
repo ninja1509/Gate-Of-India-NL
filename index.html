@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gate of India | NL</title>
+<link rel="icon" href="favicon.png" type="image/x-icon">
+
+<script>
+    window.onload = function() {
+        var pdfEmbed = document.getElementById('pdf-viewer');
+        pdfEmbed.src = 'Gate of india Menu.pdf';
+    };
+</script>
+
+
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+    #pdf-container {
+        width: 100%;
+        height: 100vh; /* Set the height to fill the viewport height */
+    }
+    #pdf-viewer {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+</head>
+<body>
+
+<div id="pdf-container">
+    <embed id="pdf-viewer" src="Gate of india Menu.pdf" type="application/pdf" />
+</div>
+
+</body>
+</html>
