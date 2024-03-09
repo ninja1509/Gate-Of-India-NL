@@ -34,7 +34,18 @@
     .mobile-images {
         display: none; /*Hide the mobile images by default for desktop */
     }
+
+    
+    .coming_soon{
+      font-size: 30px;
+      text-align: center;
+      
+    }
  
+    .mimg{
+      width: 5%;
+    }
+
     /* --------------------------------------------------------------------------- */
     /* Media query for mobile devices */
     @media (max-width: 600px) {
@@ -54,6 +65,10 @@
 
         .mobile-images {
             display: block; /* Show the mobile images for mobile devices */
+        }
+
+        .mimg{
+          width: 30%;
         }
     }
 
@@ -78,7 +93,11 @@
         .mobile-images {
             display: block; /* Show the mobile images for mobile devices */
         }
+        
+        
     }
+
+   
 
     </style>
 </head>
@@ -86,11 +105,18 @@
 
   <header>
     <!-- <h1>Gate Of India</h1> -->
-    <img src="Logo1.5.png" class="logo"/>
+    <img src="logo1.5.png" class="logo"/>
 
 </header>
 
 <!-- ================================================================================================ -->
+
+  <!-- <div class="comingsoon"> -->
+      <!-- Online Ordering and Thuisbezorgd Delivery - Coming soon -->
+      <!-- <img src="coming_soon.png" alt="a">
+  </div> -->
+
+  <p class="coming_soon"> <img src="thuisbezorgd.png" class="mimg"/> Online Ordering and Thuisbezorgd Delivery - Coming Soon </p> </marquee>
 <!-- ------------------------------------------------------------------------------------------------- -->
        <!-- Desktop images -->
     <div class="desktop-images">
