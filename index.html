@@ -1,42 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gate of India | NL</title>
-<link rel="icon" href="favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+    /* Header styles */
+      header {
+          /* border: solid; */
+          padding: 10px;
+      }
 
-<!-- <script>
-    window.onload = function() {
-        var pdfEmbed = document.getElementById('pdf-viewer');
-        pdfEmbed.src = 'Gate of india Menu.pdf';
-    };
-    
-</script>
- -->
+      .logo{
+        width: 20%;
+      }
 
-<style>
-    body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow: hidden;
+       /* Apply styles to the img element */
+    img {
+        max-width: 100%; 
+        max-height: 100%;
     }
-    #pdf-container {
-        width: 100%;
-        height: 100vh; /* Set the height to fill the viewport height */
+
+    /* Handout Menu for desktop  */
+    .desktop-images {
+        display: block; /* Show the desktop images by default in the larger screen */
     }
-    #pdf-viewer {
-        width: 100%;
-        height: 100%;
+
+    /* Restaurant Menu for mobile */
+    .mobile-images {
+        display: none; /*Hide the mobile images by default for desktop */
     }
-</style>
+ 
+    /* --------------------------------------------------------------------------- */
+    /* Media query for mobile devices */
+    @media (max-width: 600px) {
+        body {
+            flex-direction: column; /* Stack items vertically for smaller screens */
+        }
+
+        /* Header design */
+        .logo{
+          width: 100%;
+        }
+
+        /* Menu display */
+        .desktop-images {
+            display: none; /* Hide the desktop images for mobile devices */
+        }
+
+        .mobile-images {
+            display: block; /* Show the mobile images for mobile devices */
+        }
+    }
+
+    /* --------------------------------------------------------------------------- */
+
+    /* Media query for iPad landscape mode */
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        body {
+            flex-direction: row; /* Display items in a row for iPad landscape mode */
+        }
+
+        /* Header design */
+        .logo{
+          width: 100%;
+        }
+
+        /* Menu display */
+        .desktop-images {
+            display: none; /* Hide the desktop images for mobile devices */
+        }
+
+        .mobile-images {
+            display: block; /* Show the mobile images for mobile devices */
+        }
+    }
+
+    </style>
 </head>
 <body>
 
-<div id="pdf-container">
-   <p>Our website is coming soon. <br/> Please read our <a href="Gate of india Menu.pdf"> menu here </a> </p>
-</div>
+  <header>
+    <!-- <h1>Gate Of India</h1> -->
+    <img src="logo1.5.png" class="logo"/>
+
+</header>
+
+<!-- ================================================================================================ -->
+<!-- ------------------------------------------------------------------------------------------------- -->
+       <!-- Desktop images -->
+    <div class="desktop-images">
+        <img src="handout/Handout Menu_page-0001.jpg">
+        <img src="handout/Handout Menu_page-0002.jpg">
+    </div>
+
+    <!-- Mobile images -->
+    <div class="mobile-images">
+        <img src="menu/Gate of india_page-0001.jpg">
+        <img src="menu/Gate of india_page-0002.jpg">
+        <img src="menu/Gate of india_page-0003.jpg">
+        <img src="menu/Gate of india_page-0004.jpg">
+        <img src="menu/Gate of india_page-0005.jpg">
+        <img src="menu/Gate of india_page-0006.jpg">
+        <img src="menu/Gate of india_page-0007.jpg">
+        <img src="menu/Gate of india_page-0008.jpg">
+    </div>
+    
 
 </body>
 </html>
