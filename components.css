@@ -1,0 +1,96 @@
+    
+    
+*{
+    font-family: sans-serif;
+  }
+  
+  
+  /* ====================================================== */
+      /* Header styles */
+      header {
+        /* border: solid; */
+        padding: 10px;
+    }
+  
+    .logo{
+      width: 20%;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 600px) {
+        body {
+            flex-direction: column; /* Stack items vertically for smaller screens */
+        }
+    
+        /* Header design */
+        .logo{
+          width: 100%;
+        }
+    }    
+  
+    /* Media query for iPad landscape mode */
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        body {
+            flex-direction: row; /* Display items in a row for iPad landscape mode */
+        }
+
+        /* Header design */
+        .logo{
+        width: 100%;
+        }
+    }
+
+
+  /* ====================================================== */
+  
+  
+  /* COMING SOON SECTION */
+  
+    .coming_soon{
+      font-size: 20px;
+      text-align: center;
+      /* background-color: blanchedalmo nd; */
+      
+    }
+    
+    .mimg{
+      width: 5%;
+    }
+  
+    /* Media query for mobile devices */
+  @media (max-width: 600px) {
+  
+    .mimg{
+      width: 30%;
+    }
+  }
+  
+  
+
+/* ======================================================================= */
+
+/* footer */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    gap: 10px;
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px;  
+    /* width: 600px; */
+    
+  }
+  
+  @media (max-width: 600px) {
+  
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto ;
+      gap: 10px;
+      padding: 15px;
+      padding-right: 30px;
+      padding-left: 30px; 
+      
+    }
+  
+  }
