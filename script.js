@@ -1,4 +1,4 @@
 function redirectToPage() {
-    window.location.href = "https://www.thuisbezorgd.nl/en/menu/gate-of-india-1";
+    window.location.href = "https://www.ubereats.com/nl-en/store/gate-of-india/FiJDNDAiX5OSnIY0gtEANA";
   }
   
